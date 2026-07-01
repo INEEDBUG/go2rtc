@@ -94,10 +94,9 @@ func ServiceCameraEventRecordingManagement() *hap.Service {
 				CodecType: AudioRecordingCodecTypeAACLC,
 				CodecParams: []AudioRecordingCodecParameters{
 					{
-						Channels:        1,
-						BitrateMode:     []byte{AudioCodecBitrateVariable},
-						SampleRate:      []byte{AudioRecordingSampleRate24Khz, AudioRecordingSampleRate32Khz, AudioRecordingSampleRate48Khz},
-						MaxAudioBitrate: []uint32{64},
+						Channels:    1,
+						BitrateMode: []byte{AudioCodecBitrateVariable},
+						SampleRate:  []byte{AudioRecordingSampleRate24Khz, AudioRecordingSampleRate32Khz, AudioRecordingSampleRate48Khz},
 					},
 				},
 			},
@@ -136,10 +135,9 @@ func ServiceCameraEventRecordingManagement() *hap.Service {
 					CodecType: AudioRecordingCodecTypeAACLC,
 					CodecParams: []AudioRecordingCodecParameters{
 						{
-							Channels:        1,
-							BitrateMode:     []byte{AudioCodecBitrateVariable},
-							SampleRate:      []byte{AudioRecordingSampleRate24Khz},
-							MaxAudioBitrate: []uint32{64},
+							Channels:    1,
+							BitrateMode: []byte{AudioCodecBitrateVariable},
+							SampleRate:  []byte{AudioRecordingSampleRate24Khz},
 						},
 					},
 				},
