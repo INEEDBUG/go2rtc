@@ -131,7 +131,7 @@ func (p *Producer) Start() error {
 	var audioTS uint32
 
 	for {
-		_ = p.client.SetDeadline(time.Now().Add(10 * time.Second))
+		_ = p.client.SetDeadline(time.Now().Add(5 * time.Second))
 		pkt, err := p.client.ReadPacket()
 		if err != nil {
 			return err
